@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:music_player/app/common/widgets/app_background.dart';
 import 'package:music_player/app/features/authentication/repository/auth_repository.dart';
+import 'package:music_player/app/features/authentication/state/auth_result.dart';
 import 'package:music_player/app/features/authentication/state/auth_state.dart';
 import 'package:music_player/app/features/authentication/widgets/auth_card.dart';
 import 'package:music_player/core/network/models/app_response_model.dart';
@@ -28,10 +29,10 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
     ref.listen<AppResponse<AuthState>>(
       authStateProvider,
       (previous, current) async {
-        if (current.error != null) {
+        if (current.result?.result == AuthResult.failure) {
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(current.error!.errorMessage),
+            const SnackBar(
+              content: Text("Something went Wrong"),
             ),
           );
         }
