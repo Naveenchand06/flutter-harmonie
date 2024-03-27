@@ -6,6 +6,7 @@ class SongModel {
     required this.name,
     required this.id,
     required this.songUrl,
+    required this.favoritesOf,
   });
 
   final String? coverUrl;
@@ -14,6 +15,7 @@ class SongModel {
   final String? name;
   final String? id;
   final String? songUrl;
+  final List<String> favoritesOf;
 
   SongModel copyWith({
     String? coverUrl,
@@ -22,6 +24,7 @@ class SongModel {
     String? name,
     String? id,
     String? songUrl,
+    List<String>? favoritesOf,
   }) {
     return SongModel(
       coverUrl: coverUrl ?? this.coverUrl,
@@ -30,6 +33,7 @@ class SongModel {
       name: name ?? this.name,
       id: id ?? this.id,
       songUrl: songUrl ?? this.songUrl,
+      favoritesOf: favoritesOf ?? this.favoritesOf,
     );
   }
 
@@ -41,6 +45,13 @@ class SongModel {
       name: json["name"],
       id: json["id"],
       songUrl: json["songUrl"],
+      favoritesOf: json["favoritesOf"] != null
+          ? (json["favoritesOf"] as List)
+              .map(
+                (e) => e.toString(),
+              )
+              .toList()
+          : [],
     );
   }
 

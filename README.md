@@ -1,6 +1,6 @@
-# music_player
+# Harmonie
 
-A new Flutter project.
+Harmonie is a music streaming application built using Flutter and Firebase.
 
 ## Getting Started
 

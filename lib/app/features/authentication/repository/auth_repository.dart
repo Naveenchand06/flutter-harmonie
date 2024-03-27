@@ -47,7 +47,7 @@ class AuthStateNotifier extends StateNotifier<AppResponse<AuthState>> {
     required String email,
     required String password,
   }) async {
-    state = state.showLoading(true);
+    state = state.copyWith(result: const AuthState.unknown(), isLoading: true);
     final result =
         await _authService.register(email: email, password: password);
     await setValuesinLocalStorage();

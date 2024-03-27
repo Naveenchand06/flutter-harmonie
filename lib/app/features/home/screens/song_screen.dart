@@ -1,23 +1,20 @@
-import 'dart:developer';
-
-import 'package:audioplayers/audioplayers.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:music_player/app/common/widgets/app_background.dart';
 import 'package:music_player/app/common/widgets/app_banner.dart';
 import 'package:music_player/app/common/widgets/app_error_widget.dart';
 import 'package:music_player/app/common/widgets/app_loader.dart';
-import 'package:music_player/app/features/home/models/song_data.dart';
+import 'package:music_player/app/features/home/models/like_type.dart';
 import 'package:music_player/app/features/home/models/song_model.dart';
 import 'package:music_player/app/features/home/repository/song_data_repository.dart';
+import 'package:music_player/app/features/home/repository/songs_list_repository.dart';
 import 'package:music_player/app/features/home/widgets/player_card.dart';
 import 'package:music_player/core/network/models/app_response_model.dart';
 import 'package:music_player/core/theme/app_colors.dart';
 import 'package:music_player/utils/decorations/card_decoration.dart';
 import 'package:music_player/utils/image_utils/image_utils.dart';
+import 'package:music_player/utils/local_storage/storage_service.dart';
 
 class SongScreen extends ConsumerStatefulWidget {
   const SongScreen({
@@ -32,8 +29,11 @@ class SongScreen extends ConsumerStatefulWidget {
 }
 
 class _SongScreenState extends ConsumerState<SongScreen> {
+  String userID = "";
+
   @override
   void initState() {
+    userID = StorageService.getUserId();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       ref
           .read(songDataProvider.notifier)
@@ -77,12 +77,38 @@ class _SongScreenState extends ConsumerState<SongScreen> {
                 ),
               ),
               SizedBox(height: 20.h),
-              Text(
-                widget.song.name ?? "-",
-                style: Theme.of(context).textTheme.displayMedium?.copyWith(
-                      fontWeight: FontWeight.w600,
-                      color: AppColor.black,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    widget.song.name ?? "-",
+                    style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                          fontWeight: FontWeight.w600,
+                          color: AppColor.black,
+                        ),
+                  ),
+                  IconButton(
+                    onPressed: () async {
+                      await ref.read(songsListProvider.notifier).markAsFavorite(
+                            widget.song.id!,
+                            userID,
+                            liketype: widget.song.favoritesOf.contains(userID)
+                                ? LikeType.dislike
+                                : LikeType.like,
+                          );
+                      setState(() {});
+                    },
+                    icon: Icon(
+                      widget.song.favoritesOf.contains(userID)
+                          ? Icons.favorite
+                          : Icons.favorite_border_rounded,
+                      color: widget.song.favoritesOf.contains(userID)
+                          ? Colors.pink
+                          : AppColor.black,
+                      size: 24.sp,
                     ),
+                  )
+                ],
               ),
               SizedBox(height: 4.h),
               Text(
