@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "736039496309",
+    "project_id": "music-player-5163c",
+    "storage_bucket": "music-player-5163c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736039496309:android:16b17a0cc1f337c131e63c",
+        "android_client_info": {
+          "package_name": "com.naveenchand.music_player"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf2_6sqMhGRTGRgRaeGueNM9h4zIwITY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
