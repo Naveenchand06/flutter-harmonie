@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -6,11 +5,9 @@ import 'package:music_player/app/common/widgets/app_background.dart';
 import 'package:music_player/app/common/widgets/app_banner.dart';
 import 'package:music_player/app/common/widgets/app_error_widget.dart';
 import 'package:music_player/app/common/widgets/app_loader.dart';
-import 'package:music_player/app/features/authentication/repository/auth_repository.dart';
 import 'package:music_player/app/features/home/repository/songs_list_repository.dart';
 import 'package:music_player/app/features/home/screens/song_screen.dart';
 import 'package:music_player/app/features/home/widgets/song_item.dart';
-import 'package:music_player/core/theme/theme_provider.dart';
 import 'package:music_player/utils/constants/app_strings.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -31,9 +28,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
-    // double screenWidth = MediaQuery.of(context).size.width;
-
     final songsList = ref.watch(songsListProvider);
 
     return Scaffold(

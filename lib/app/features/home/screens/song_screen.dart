@@ -1,16 +1,10 @@
-import 'dart:developer';
-
-import 'package:audioplayers/audioplayers.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:music_player/app/common/widgets/app_background.dart';
 import 'package:music_player/app/common/widgets/app_banner.dart';
 import 'package:music_player/app/common/widgets/app_error_widget.dart';
 import 'package:music_player/app/common/widgets/app_loader.dart';
-import 'package:music_player/app/features/home/models/song_data.dart';
 import 'package:music_player/app/features/home/models/song_model.dart';
 import 'package:music_player/app/features/home/repository/song_data_repository.dart';
 import 'package:music_player/app/features/home/widgets/player_card.dart';

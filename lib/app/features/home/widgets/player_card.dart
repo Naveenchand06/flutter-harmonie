@@ -1,10 +1,8 @@
-import 'dart:async';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:music_player/app/features/home/models/song_data.dart';
-import 'package:music_player/app/features/home/repository/song_data_repository.dart';
 import 'package:music_player/core/theme/app_colors.dart';
 import 'package:music_player/utils/decorations/card_decoration.dart';
 
@@ -46,8 +44,6 @@ class _PlayerCardState extends ConsumerState<PlayerCard> {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-
-    final songData = ref.watch(songDataProvider);
 
     return Container(
       width: screenWidth,

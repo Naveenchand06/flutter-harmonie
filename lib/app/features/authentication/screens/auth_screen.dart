@@ -28,6 +28,13 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
     ref.listen<AppResponse<AuthState>>(
       authStateProvider,
       (previous, current) async {
+        if (current.error != null) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(current.error!.errorMessage),
+            ),
+          );
+        }
         if (current.isLoading == true) {
           LoadingScreen.instance().show(
             context: context,
