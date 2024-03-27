@@ -1,6 +1,6 @@
 # Harmonie
 
-<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/master/assets/showcase/app_icon.jpeg" width="250" height="250">
+<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/app_icon.jpeg" width="250" height="250">
 
 Harmonie is a music streaming application built using Flutter and Firebase.
 
