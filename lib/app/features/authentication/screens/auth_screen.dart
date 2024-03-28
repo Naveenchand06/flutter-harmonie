@@ -8,7 +8,6 @@ import 'package:music_player/app/features/authentication/state/auth_state.dart';
 import 'package:music_player/app/features/authentication/widgets/auth_card.dart';
 import 'package:music_player/core/network/models/app_response_model.dart';
 import 'package:music_player/core/theme/theme_provider.dart';
-import 'package:music_player/utils/constants/app_strings.dart';
 import 'package:music_player/utils/image_utils/image_path.dart';
 import 'package:music_player/utils/image_utils/image_utils.dart';
 import 'package:music_player/utils/loading/loading_screen.dart';
