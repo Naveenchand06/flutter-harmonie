@@ -21,7 +21,6 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ## Downlods
-
  Click [here](https://github.com/Naveenchand06/flutter-harmonie/releases/download/v1-release/app-arm64-v1-release.apk) to download `arm64` APK 
 
 
@@ -104,3 +103,7 @@ This music player app prioritizes code efficiency through reusable components fo
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://naveen.tv/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/naveenchand06/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Naveenchand0606)
+
+
+## Downlods
+ Click [here](https://github.com/Naveenchand06/flutter-harmonie/releases/download/v1-release/app-arm64-v1-release.apk) to download `arm64` APK 
