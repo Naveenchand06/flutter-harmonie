@@ -19,6 +19,8 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+<br/>
+
 ## State Management
 
 ### State Management with Custom Generics
@@ -42,7 +44,7 @@ This custom generics provide a structured approach to managing these three state
 
 Overall, this approach leverages Riverpod's flexibility while incorporating the intuitive state handling concepts from BLOC, creating a streamlined state management experience for developers.
 
-<br/><br/>
+<br/>
 
 ## Reusable Dialogs and Loading
 
