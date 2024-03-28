@@ -23,18 +23,17 @@ samples, guidance on mobile development, and a full API reference.
 
 ### State Management with Custom Generics
 
-This music player app utilizes **Riverpod** for state management. However, to simplify event handling and state updates, we've created custom generics. *These generics mimic the behavior of BLOC, a popular state management pattern*.
+This music player app utilizes **Riverpod** for state management. However, to simplify event handling and state updates, I've created custom generics. *These generics mimic the behavior of BLOC, a popular state management pattern*.
 
 ### What is BLOC?
 
 BLOC (Business Logic Component) is a state management architecture frequently used in Flutter applications. It revolves around three core states:
 
-Loading: Indicates that data is being fetched or an operation is in progress.
-Error: Signals that an issue has occurred during a process.
-Success: Signifies that data or an operation has completed successfully.
-Our Custom Generics
+Loading: Indicates that data is being fetched or an operation is in progress.<br/>
+Error: Signals that an issue has occurred during a process. <br/>
+Success: Signifies that data or an operation has completed successfully.<br/>
 
-Our custom Riverpod generics provide a structured approach to managing these three states within your UI. They handle event triggering, state emissions, and state change listening within the UI, similar to how BLOC functions. This approach streamlines state management while remaining readily understandable for those familiar with BLOC.
+This custom generics provide a structured approach to managing these three states within your UI. They handle event triggering, state emissions, and state change listening within the UI, similar to how BLOC functions. This approach streamlines state management while remaining readily understandable for those familiar with BLOC.
 
 ### Benefits:
 
