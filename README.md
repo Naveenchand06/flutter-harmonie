@@ -42,6 +42,8 @@ This custom generics provide a structured approach to managing these three state
 
 Overall, this approach leverages Riverpod's flexibility while incorporating the intuitive state handling concepts from BLOC, creating a streamlined state management experience for developers.
 
+<br/><br/>
+
 ## Reusable Dialogs and Loading
 
 This music player app prioritizes code efficiency through reusable components for dialogs and loading states. By implementing:
