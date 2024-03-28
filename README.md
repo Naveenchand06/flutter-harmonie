@@ -66,13 +66,13 @@ Overall, this approach leverages Riverpod's flexibility while incorporating the 
 
 ## Roadmap
 
-- Fetching sing data from Firebase and playing song [x]
+-  [x] Fetching sing data from Firebase and playing song
 
-- Play, Pause and Seek feature [x]
+- [x]  Play, Pause and Seek feature [x]
 
-- In app volume control [ ]
+- [ ] In app volume control
 
-- Previous and Next Song option [ ]
+- [ ] Previous and Next Song option
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://naveen.tv/)
