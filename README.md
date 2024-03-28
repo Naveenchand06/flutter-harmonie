@@ -19,6 +19,11 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+
+## Downlods
+
+ Click [![here]](https://github.com/Naveenchand06/flutter-harmonie/releases/tag/v1-release#:~:text=app%2Darm64%2Dv1%2Drelease.apk) to download `arm64` APK 
+
 <br/>
 
 ## State Management
