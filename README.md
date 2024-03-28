@@ -22,7 +22,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Downlods
 
- Click [here](https://github.com/Naveenchand06/flutter-harmonie/releases/tag/v1-release/app-arm64-v1-release.apk) to download `arm64` APK 
+ Click [here](https://github.com/Naveenchand06/flutter-harmonie/releases/download/v1-release/app-arm64-v1-release.apk) to download `arm64` APK 
 
 <br/>
 
