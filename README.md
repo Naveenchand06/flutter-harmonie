@@ -26,6 +26,13 @@ samples, guidance on mobile development, and a full API reference.
 
 <br/>
 
+## Downloads
+
+<a href="[![Download](https://img.shields.io/badge/download-available-green.svg)](your_download_link)">
+  [![Download](https://img.shields.io/badge/download-available-green.svg)](https://github.com/Naveenchand06/flutter-harmonie/releases/tag/v1-release#:~:text=app%2Darm64%2Dv1%2Drelease.apk)
+</a>
+
+
 ## State Management
 
 ### State Management with Custom Generics
