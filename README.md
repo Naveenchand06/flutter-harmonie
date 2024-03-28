@@ -24,7 +24,6 @@ samples, guidance on mobile development, and a full API reference.
 
  Click [here](https://github.com/Naveenchand06/flutter-harmonie/releases/download/v1-release/app-arm64-v1-release.apk) to download `arm64` APK 
 
-<br/>
 
 ## State Management
 
@@ -90,9 +89,16 @@ This music player app prioritizes code efficiency through reusable components fo
 
 - [x]  Play, Pause and Seek feature [x]
 
+- [ ] `No Internet connection` screen if the internet connection is not available 
+
 - [ ] In app volume control
 
 - [ ] Previous and Next Song option
+
+- [ ] Dark and Light theme options
+
+- [ ] Seperate section for favorite songs
+
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://naveen.tv/)
