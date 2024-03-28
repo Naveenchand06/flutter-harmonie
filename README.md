@@ -4,7 +4,7 @@
 
 Harmonie is a music streaming application built using Flutter and Firebase.
 
-##### Author & Developer: [Naveenchand](https://github.com/Naveenchand06).
+##### Author & Developer: [Naveenchand](https://github.com/Naveenchand06)
 
 ## Getting Started
 
@@ -42,6 +42,17 @@ This custom generics provide a structured approach to managing these three state
 
 Overall, this approach leverages Riverpod's flexibility while incorporating the intuitive state handling concepts from BLOC, creating a streamlined state management experience for developers.
 
+## Reusable Dialogs and Loading
+
+This music player app prioritizes code efficiency through reusable components for dialogs and loading states. By implementing:
+
+**Generic Dialogs**: I've created dialogs that can be easily customized for different purposes within the app. You can specify the title, content, and buttons for each dialog instance, reducing repetitive code.<br/><br/>
+**Singleton Loading**: A single "loading" component serves as a central point to display a loading indicator anywhere in the app. This eliminates the need to recreate loading states from scratch, streamlining development and ensuring consistency.<br/><br/>
+
+*This approach allows you to*:
+- Minimize Code Duplication: Reuse common dialog and loading functionalities across the app.
+- Maintain Consistency: Guarantee a uniform appearance and behavior for dialogs and loading indicators.
+- Simplify Development: Focus on the unique content of each dialog without rewriting dialog logic.
 
 ## Screenshots
 
