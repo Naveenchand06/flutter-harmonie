@@ -40,9 +40,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
           LoadingScreen.instance().show(
             context: context,
           );
-          await Future.delayed(const Duration(microseconds: 300));
-          LoadingScreen.instance()
-              .show(context: context, text: AppStrings.creatingAccount);
         } else {
           LoadingScreen.instance().hide();
         }
