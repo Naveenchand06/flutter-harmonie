@@ -29,9 +29,9 @@ This music player app utilizes **Riverpod** for state management. However, to si
 
 BLOC (Business Logic Component) is a state management architecture frequently used in Flutter applications. It revolves around three core states:
 
-Loading: Indicates that data is being fetched or an operation is in progress.<br/>
-Error: Signals that an issue has occurred during a process. <br/>
-Success: Signifies that data or an operation has completed successfully.<br/>
+*Loading*: Indicates that data is being fetched or an operation is in progress.<br/>
+*Error*: Signals that an issue has occurred during a process. <br/>
+*Success*: Signifies that data or an operation has completed successfully.<br/>
 
 This custom generics provide a structured approach to managing these three states within your UI. They handle event triggering, state emissions, and state change listening within the UI, similar to how BLOC functions. This approach streamlines state management while remaining readily understandable for those familiar with BLOC.
 
