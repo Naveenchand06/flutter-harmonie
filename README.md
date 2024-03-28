@@ -46,27 +46,27 @@ Overall, this approach leverages Riverpod's flexibility while incorporating the 
 ## Screenshots
 
 <p float="left">
-<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/login.jpeg" width="220" height="400">
-<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/loading.jpeg" width="220" height="400">
-<img src="https://raw.githubusercontent.com/Naveenchand06/flutter-harmonie/main/assets/showcase/register.jpeg" width="220" height="400">
+<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/login.jpeg" width="250" height="500">
+<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/loading.jpeg" width="250" height="500">
+<img src="https://raw.githubusercontent.com/Naveenchand06/flutter-harmonie/main/assets/showcase/register.jpeg" width="250" height="500">
 </p>
 
 <p float="left">
-<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/home.jpeg" width="220" height="400">
-<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/search.jpeg" width="220" height="400">
-<img src="https://raw.githubusercontent.com/Naveenchand06/flutter-harmonie/main/assets/showcase/dialog.jpeg" width="220" height="400">
+<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/home.jpeg" width="250" height="500">
+<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/search.jpeg" width="250" height="500">
+<img src="https://raw.githubusercontent.com/Naveenchand06/flutter-harmonie/main/assets/showcase/dialog.jpeg" width="250" height="500">
 </p>
 
 <p float="left">
-<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/song_1.jpeg" width="220" height="400">
-<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/song_2.jpeg" width="220" height="400">
-<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/song_3.jpeg" width="220" height="400">
+<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/song_1.jpeg" width="250" height="500">
+<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/song_2.jpeg" width="250" height="500">
+<img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/song_3.jpeg" width="250" height="500">
 </p>
 
 
 ## Roadmap
 
--  [x] Fetching sing data from Firebase and playing song
+- [x] Fetching sing data from Firebase and playing song
 
 - [x]  Play, Pause and Seek feature [x]
 
