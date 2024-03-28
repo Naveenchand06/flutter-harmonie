@@ -4,6 +4,8 @@
 
 Harmonie is a music streaming application built using Flutter and Firebase.
 
+##### Author & Developer: [Naveenchand](https://github.com/Naveenchand06).
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -16,6 +18,31 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## State Management
+
+### State Management with Custom Generics
+
+This music player app utilizes **Riverpod** for state management. However, to simplify event handling and state updates, we've created custom generics. *These generics mimic the behavior of BLOC, a popular state management pattern*.
+
+### What is BLOC?
+
+BLOC (Business Logic Component) is a state management architecture frequently used in Flutter applications. It revolves around three core states:
+
+Loading: Indicates that data is being fetched or an operation is in progress.
+Error: Signals that an issue has occurred during a process.
+Success: Signifies that data or an operation has completed successfully.
+Our Custom Generics
+
+Our custom Riverpod generics provide a structured approach to managing these three states within your UI. They handle event triggering, state emissions, and state change listening within the UI, similar to how BLOC functions. This approach streamlines state management while remaining readily understandable for those familiar with BLOC.
+
+### Benefits:
+
+- The BLOC-inspired structure makes it easier for developers who have used BLOC previously to adapt and work with this state management system.
+- By building custom generics, you can potentially tailor the state management solution to fit the specific needs of your application.
+
+Overall, this approach leverages Riverpod's flexibility while incorporating the intuitive state handling concepts from BLOC, creating a streamlined state management experience for developers.
+
 
 ## Screenshots
 
@@ -36,3 +63,19 @@ samples, guidance on mobile development, and a full API reference.
 <img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/song_2.jpeg" width="220" height="400">
 <img src="https://github.com/Naveenchand06/flutter-harmonie/raw/main/assets/showcase/song_3.jpeg" width="220" height="400">
 </p>
+
+
+## Roadmap
+
+- Fetching sing data from Firebase and playing song [x]
+
+- Play, Pause and Seek feature [x]
+
+- In app volume control [ ]
+
+- Previous and Next Song option [ ]
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://naveen.tv/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/naveenchand06/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Naveenchand0606)
